@@ -71,7 +71,7 @@ class Activation(Resource):
         try:
             email = decoded_msg['email']
             # Search the user and activate account
-            user = Users.query.get(email)
+            user = Users.query.get_or_404(email)
             user.active = True
             db.session.commit()
             return ({'message':str('Email: %s | Activated: %s' %(user.email, user.active))})
@@ -129,4 +129,4 @@ api.add_resource(Login, '/login', endpoint='login') # 3
 api.add_resource(Main, '/main', endpoint='main') # 4
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True) # Debug=True is needed for automatic re-run of the script
