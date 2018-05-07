@@ -1,0 +1,10 @@
+SQLALCHEMY_DATABASE_URI = r'sqlite:///C:\Users\Alex\Desktop\Vimcar_challenge\users.db'
+SQLALCHEMY_TRACK_MODIFICATIONS = False
+KEY = 'I 1ike t@ bring k3ys 1nto ch@ll3ng3s'
+SECRET_KEY = '1@^F#^645$#gg2gu'
+DEBUG=False
+MAIL_SERVER='smtp.domain.com'
+MAIL_PORT=465
+MAIL_USE_SSL=True
+MAIL_USERNAME = 'sender@domain.com'
+MAIL_PASSWORD = 'sender_p@ssword'
