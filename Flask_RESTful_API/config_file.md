@@ -1,0 +1,1 @@
+### Just Static settings
